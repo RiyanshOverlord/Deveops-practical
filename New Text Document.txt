@@ -1,1 +1,11 @@
 dsddsads
+
+ASSIGNMENT 2 – CI USING JENKINS
+
+1.	Create a simple Freestyle job in Jenkins that executes a basic system information like date/time/directory listing.
+2.	Create a freestyle job that accepts a parameter and prints it.
+3.	Create a freestyle job to run a java code . Build it every 5 minutes.
+4.	Create a freestyle job that pulls a simple Java/JS file from GitHub and compiles and execute it. Display the console output.
+5.	Configure a job in Jenkins to automatically build when changes are pushed to a Git repository using Poll SCM. Poll every 2 minutes.
+6.	Automate a Build using GitHub Webhooks - Configure Jenkins to start a build automatically every time a team member pushes a code change to GitHub.
+
