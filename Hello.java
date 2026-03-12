@@ -3,6 +3,6 @@ class Hello{
 public static void main(String[] args)
 {
 System.out.println("Hello 101");
-System.out.println("Hello java from github");
+System.out.println("Hello java from github updated for 2 minutes SCM");
 }
 }
