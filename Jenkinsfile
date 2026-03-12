@@ -10,7 +10,7 @@ pipeline {
         }
         stage('build my file'){
             steps {
-                echo 'Build Project'
+                echo 'Build Projects'
                 bat 'javac print.java'
                
             }
