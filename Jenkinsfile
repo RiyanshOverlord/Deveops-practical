@@ -1,21 +1,32 @@
 pipeline {
     agent any
-
+    triggers {
+        cron('H 2 * * *')
+    }
     stages {
-        stage('Checkout'){
+        stage('Checkout') {
             steps {
-                git 'https://github.com/RiyanshOverlord/Deveops-practical'
-            }}
-        
-         stage('Build'){
+                checkout scm
+            }
+        }
+        stage('Build') {
             steps {
-                bat 'javac Hello.java'
-            }}
-            stage('exe'){
-                steps{
-                bat 'java Hello'
-            }}
+                echo "Building project..."
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Running tests..."
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo "Deploying application..."
+            }
         }
     }
-
-
+    post {
+        always {
+            echo "Pipeline completed."
+        }
+    }}
